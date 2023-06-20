@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <style></style>
+    <title>Bootstrap Example</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="navbar navbar-expand navbar-dark bg-dark">
+        <img
+          src="https://wktechnology.com.br/wp-content/uploads/2021/10/Logo-02.png"
+          style="height: 40px"
+        />
+        <div class="container"></div>
+      </header>
+
+      <div class="container">
+        <h1>
+          Bem-vindo ao Sistema de Processamento de Dados para Banco de Sangue!
+        </h1>
+        <p>
+          Nosso sistema foi projetado para ajudar uma agência de banco de sangue
+          a processar e extrair informações importantes de uma lista de
+          candidatos a doadores. Ao fornecer um arquivo JSON com os dados dos
+          candidatos, nosso sistema apresentará os seguintes resultados:
+        </p>
+
+        <br />
+
+        <h4>Distribuição dos Candidatos por Estado</h4>
+        <div>
+          <canvas id="meuGrafico"></canvas>
+
+          <h4>
+            Alguns insights sobre a distribuição dos candidatos por estado:
+          </h4>
+          <ul>
+            <li>Minas Gerais (MG) possui 8 candidatos.</li>
+            <li>Sergipe (SE) possui 22 candidatos.</li>
+            <li>Amazonas (AM) possui 5 candidatos.</li>
+            <!-- Adicione outros estados conforme necessário -->
+          </ul>
+        </div>
+
+        <br />
+        <br />
+        <h4>
+          A quantidade de possíveis doadores para cada tipo sanguíneo receptor
+        </h4>
+        <div>
+          <canvas id="meuGrafico4"></canvas>
+          <h4>Insights sobre Doadores de Sangue</h4>
+
+          <ul>
+            <li>
+              Distribuição dos tipos sanguíneos: O tipo sanguíneo O- possui a
+              maior quantidade de doadores disponíveis, seguido por A-, B-, O+,
+              A+, B+, AB- e AB+.
+            </li>
+            <li>
+              Escassez de doadores de AB+: O tipo sanguíneo AB+ é o que possui a
+              menor quantidade de doadores disponíveis, com apenas 18 indivíduos
+              listados.
+            </li>
+            <li>
+              Alta disponibilidade de doadores de O-: O tipo sanguíneo O- possui
+              uma quantidade significativa de doadores disponíveis, com 190
+              indivíduos listados.
+            </li>
+            <li>
+              Variação na quantidade de doadores por tipo: A quantidade de
+              doadores varia consideravelmente entre os diferentes tipos
+              sanguíneos.
+            </li>
+          </ul>
+        </div>
+
+        <br />
+
+        <div>
+          <h4>Variação do IMC Médio</h4>
+          <canvas id="meuGrafico5"></canvas>
+          <p>
+            Observa-se uma variação no IMC médio em diferentes faixas etárias.
+          </p>
+          <h4>Faixas Etárias com Maior e Menor IMC Médio</h4>
+          <p>Com base nos dados fornecidos:</p>
+          <ul>
+            <li>
+              A faixa etária dos 30 anos apresenta o maior IMC médio, com o
+              valor de 25.61.
+            </li>
+            <li>
+              A faixa etária dos 70 anos apresenta o menor IMC médio, com o
+              valor de 23.59.
+            </li>
+          </ul>
+        </div>
+
+        <br />
+
+        <h4>Média de idade para cada tipo sanguíneo</h4>
+        <div style="height: 700px">
+          <canvas id="meuGrafico3"></canvas>
+        </div>
+        <h4>Insights sobre a Média de idade para cada tipo sanguíneo</h4>
+
+        <ul>
+          <li>
+            Importância dos tipos sanguíneos com médias mais altas: Os tipos
+            sanguíneos com médias mais altas podem ser considerados mais
+            relevantes para certas condições ou tratamentos que dependem desses
+            níveis.
+          </li>
+          <li>
+            Significado clínico das médias mais baixas: Os tipos sanguíneos com
+            médias mais baixas podem ter implicações clínicas específicas.
+          </li>
+        </ul>
+        <br />
+        <br />
+
+        <h4>Percentual de obesos entre os homens e entre as mulheres</h4>
+        <div>
+          <div style="height: 700px">
+            <canvas id="meuGrafico2"></canvas>
+          </div>
+          <br />
+          <br />
+          <h4>Comparação entre Homens e Mulheres</h4>
+          <p>Com base nos dados fornecidos:</p>
+          <p>
+            O percentual de obesos entre os homens (22.15%) é ligeiramente maior
+            em comparação ao percentual entre as mulheres (18.54%).
+          </p>
+        </div>
+
+        <br />
+      </div>
+
+      <footer class="footer">
+        <div class="container text-center py-2">
+          <p>&copy; 2023 wk technology. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
